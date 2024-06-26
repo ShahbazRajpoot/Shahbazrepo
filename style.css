@@ -17,15 +17,18 @@ body {
     align-items: center;
 }
 h1 {
-    font-size: clamp(60px, 8vw, 100px);
+    font-size: clamp(25px, 8vw, 100px);
+}
+p {
+    font-size: clamp(.3rem, 1.5vw, 3rem);
 }
 button {
     color: aliceblue;
     background-color: rgb(68, 68, 176);
-    font-size: 1rem;
+    font-size: clamp(.3rem, 1.5vw, 3rem);
     outline: none;
     border: none;
     border-radius: 2px;
-    padding: 5px;
-    margin-top: 10px;
+    padding: clamp(3px, 1vw, 20px) clamp(10px, 1vw + 8px, 30px);
+    margin-top: clamp(0px, 1vw, 15px);
 }
