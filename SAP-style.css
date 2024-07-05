@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     font-weight: 400;
     font-size: 1.2rem;
@@ -14,14 +14,52 @@ body {
 }
 
 main {
-    height: 400vh;
-    max-width: 800px;
-    width: 60%;
-    margin: 20px auto;
+    
+}
+
+.article-header {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 150px;
+    background-image: url("/Shahbazrepo/images/back-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.top-content-text {
+    opacity: 1;
+
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit;
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+    }
+}
+
+.article-header .top-content-text h1 {
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px rgb(81, 36, 36);
+}
+
+.article-header .top-content-text p {
+    color: rgb(240, 224, 224);
 }
 
 article {
-    margin-top: 200px;
+    height: 400vh;
+    max-width: 900px;
+    width: 75%;
+    margin: 20px auto;
 }
 
 article img {
@@ -39,10 +77,6 @@ article img {
     }
 }
 
-.top-container {
-    font-size: 2.5rem;
-    margin: 200px 0;
-}
 
 .scroll-watcher {
     position: fixed;
